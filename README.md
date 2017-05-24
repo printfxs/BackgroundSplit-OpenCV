@@ -69,17 +69,3 @@ Time of Update ViBe Background: 3.35824ms
 Time of Update ViBe Background: 3.57153ms
 Time of Update ViBe Background: 3.44415ms
 ```
-
-
-the result of **Debug Version**:
-```cpp
-Time of Magnitude Gray Image: 1.38906ms
-Time of Calculate Texture Features of the whole Image: 4126.57ms
-```
-the result of **Release Version**:
-```cpp
-Time of Magnitude Gray Image: 0.452412ms
-Time of Calculate Texture Features of the whole Image: 1291.15ms
-```
-
-
