@@ -50,8 +50,13 @@ int main(int argc, char* argv[])
 
     // 程序运行时间统计变量
     // the Time Statistical Variable of Program Running Time
+<<<<<<< HEAD
     double time;
     double start;
+=======
+//    double time;
+//    double start;
+>>>>>>> origin/master
 
     ViBe vibe;
     bool count = true;
@@ -72,11 +77,19 @@ int main(int argc, char* argv[])
         }
         else
         {
+<<<<<<< HEAD
             start = static_cast<double>(getTickCount());
             vibe.Update(gray);
             time = ((double)getTickCount() - start) / getTickFrequency() * 1000;
 
             cout << "Time of Update ViBe Background: " << time << "ms" <<endl<<endl;
+=======
+//            start = static_cast<double>(getTickCount());
+            vibe.Update(gray);
+//            time = ((double)getTickCount() - start) / getTickFrequency() * 1000;
+
+//            cout << "Time of Update ViBe Background: " << time << "ms" <<endl<<endl;
+>>>>>>> origin/master
 
             FGModel = vibe.getFGModel();
 //			morphologyEx(FGModel, FGModel, MORPH_OPEN, Mat());

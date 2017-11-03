@@ -271,7 +271,11 @@ void ViBe::Update(Mat img)
                     // 为样本库赋随机值
                     // Set random pixel's Value for Sample Library
                     random = rng.uniform(0, num_samples);
+<<<<<<< HEAD
                     samples[row][col][random]=img.at<uchar>(i, j);
+=======
+                    samples[i][j][random]=img.at<uchar>(i, j);
+>>>>>>> origin/master
 				}
 			}
             /*===================================================================
