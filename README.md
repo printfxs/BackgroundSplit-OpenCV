@@ -69,4 +69,7 @@ Time of Update ViBe Background: 3.35824ms
 Time of Update ViBe Background: 3.57153ms
 Time of Update ViBe Background: 3.44415ms
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
