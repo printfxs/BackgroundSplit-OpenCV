@@ -10,12 +10,12 @@ LINK_DIRECTORIES(${PROJECT_BINARY_DIR}/lib)
 INCLUDE_DIRECTORIES(./)
 INCLUDE_DIRECTORIES(./src)
 
-# GaussBGDifference，高斯背景差分法动态链接库生成
-SET(LIB_GAUSSBGDIFF_SOURCE
-	./src/GaussBGDifference/gaussbgdifference.h
-	./src/GaussBGDifference/gaussbgdifference.cpp)
-ADD_LIBRARY(gaussBG_diff SHARED ${LIB_GAUSSBGDIFF_SOURCE})
-TARGET_LINK_LIBRARIES(gaussBG_diff
+# BGDifference，高斯背景差分法动态链接库生成
+SET(LIB_BGDIFF_SOURCE
+	./src/BGDifference/BGDifference.h
+	./src/BGDifference/BGDifference.cpp)
+ADD_LIBRARY(BGDiff SHARED ${LIB_BGDIFF_SOURCE})
+TARGET_LINK_LIBRARIES(BGDiff
 	${OpenCV_LIBS})
 
 # ViBe动态链接库生成
@@ -32,11 +32,11 @@ TARGET_LINK_LIBRARIES(FrameDifference_test
 	${OpenCV_LIBS})
 
 
-# 生成GaussBGDifference测试程序
-SET(LIB_GAUSSBGDIFF gaussBG_diff)
-ADD_EXECUTABLE(gaussBG_diff_test ./src/GaussBGDifference/main.cpp)
-TARGET_LINK_LIBRARIES(gaussBG_diff_test
-	${LIB_GAUSSBGDIFF})
+# 生成BGDifference测试程序
+SET(LIB_BGDIFF BGDiff)
+ADD_EXECUTABLE(BGDiff_test ./src/BGDifference/main.cpp)
+TARGET_LINK_LIBRARIES(BGDiff_test
+	${LIB_BGDIFF})
 
 # 生成ViBe测试程序
 SET(LIB_VIBE vibe)

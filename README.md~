@@ -1,15 +1,15 @@
 This repository is the C++ Source Code of several algorithms of Extracting Background, which are based on OpenCV libraries after I learn about the theory of these algorithms.
-These **Extracting Background Algorithms** includes **Frame-Difference** Algorithm, **Background-Difference** Algorithm, **ViBe** Algorithm.
+These **Extracting Background Algorithms** includes **Frame-Difference** Algorithm, **Gauss-Background-Difference** Algorithm, **ViBe** Algorithm.
 
 # Extracting Background Algorithms' Theory
 I wrote a blog about these algorithms' theory. And here is the web address:
-[http://blog.csdn.net/ajianyingxiaoqinghan/article/details/72628402](《背景提取算法——帧间差分法、背景差分法、ViBe背景提取算法》)
+http://blog.csdn.net/ajianyingxiaoqinghan/article/details/72628402
 
 # Files Introduction
 
 - src - Source Codes' Path
 	- FramesDifference - source codes of Frame-Difference Algorithm
-	- BGDifference - source codes of Background-Difference Algorithm
+	- GaussBGDifference - source codes of Gauss-Background-Difference Algorithm
 	- ViBe - source codes of ViBe Algorithm
 - Image - the Path of Screenshot of Test Programs
 - Video - the Path of Test Video 
@@ -45,7 +45,7 @@ I run the algorithm test program by using image whose path is */GLCM_OpenCV/imag
 I run these 3 kinds of Algorithms by using video whose path is */BackgroundSplit-OpenCV/Video/Camera Road 01.avi*, and 3 kinds of Algorithms' results are like below:
 the result of Frame-Difference Algorithm:
 ![](./Image/FrameDifference.png)
-the result of Background-Difference Algorithm:
+the result of Gauss-Background-Difference Algorithm:
 ![](./Image/GaussBG_Difference.png)
 the result of ViBe Algorithm:
 ![](./Image/ViBe.png)
@@ -69,4 +69,17 @@ Time of Update ViBe Background: 3.35824ms
 Time of Update ViBe Background: 3.57153ms
 Time of Update ViBe Background: 3.44415ms
 ```
+
+
+the result of **Debug Version**:
+```cpp
+Time of Magnitude Gray Image: 1.38906ms
+Time of Calculate Texture Features of the whole Image: 4126.57ms
+```
+the result of **Release Version**:
+```cpp
+Time of Magnitude Gray Image: 0.452412ms
+Time of Calculate Texture Features of the whole Image: 1291.15ms
+```
+
 

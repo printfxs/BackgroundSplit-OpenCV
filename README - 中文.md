@@ -3,13 +3,13 @@
 
 # 一、原理解释
 对几种背景提取算法的研究，笔者写了博客。地址如下：
-http://blog.csdn.net/ajianyingxiaoqinghan/article/details/72628402
+[http://blog.csdn.net/ajianyingxiaoqinghan/article/details/72628402](《背景提取算法——帧间差分法、背景差分法、ViBe背景提取算法》)
 
 # 二、文件说明
 
 - src：源代码所在路径
 	- FramesDifference：帧间差分法源码
-	- GaussBGDifference：背景差分法源码
+	- BGDifference：背景差分法源码
 	- ViBe：ViBe背景提取算法源码
 - Image： 测试截图
 - Video：测试使用视频
